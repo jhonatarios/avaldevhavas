@@ -15,6 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <?php
             $gid = $_GET['id'];
+            $erro = "A postagem que você tentou acessar não existe ou está indisponivel";
 
             foreach ($post as $value) {
                 if ($value['id'] == $gid) {
@@ -22,6 +23,12 @@
                     $body = $value['body'];
                 }
             }
+
+            if ($gid == null){
+                echo "<style>.post{display:none;}</style>";
+                echo "<h3>$erro</h3>";
+            }
+
         ?>
         <head><title><?php echo $title;?> — Posts</title></head>
         <div class="post">
@@ -29,6 +36,6 @@
             <p>body: <?php echo $body;?></p><br>
         </div>
         <hr>
-        <a href="index.php" class="href">Back to home</a>
+        <a href="index.php" class="href">Voltar para a pagina inicial</a>
 </body>
 </html>
