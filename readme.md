@@ -21,7 +21,9 @@ git clone https://github.com/jhonatarios/avaldevhavas
 
 1. Descreva possíveis otimizações de performance que você poderia fazer no seu
 próprio código.
+
 R: Utilizar de uma biblioteca de estilos própria, o projeto está demasiadamente simples, a utilização do Bootstrap só foi realizada para ter uma rápida entrega, com uma boa aparência, porém se utilizasse um código próprio, poderia aumentar um pouco mais a performance.
 
 2. O que você poderia ter melhorado?
+
 R: O visual poderia ser pouco melhor trabalhado, não foi muito bem utilizado o Bootstrap.
